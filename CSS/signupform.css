@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background:rgb(78, 134, 78);
+}
+.registration_form{
+    width:90%;
+    margin:auto;  
+}
+.Header{
+    text-align:center;
+    line-height: 50px;
+}
+.registration_form input{
+    width:100%;
+    border-radius:20px;
+    height:25px;
+}
+.submit{
+    width:200px;
+    background:rgb(76, 145, 236);
+    border-radius:10px;
+    text-align:center;
+}
+.reg_form select{
+    border-radius:10px;
+    height:20px;
+}
+.form{
+    display:flex;
+    position:relative;
+    margin-top:5px;
+}
+.form_reg{
+    margin:0 30px;
+}

@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Lato', sans-serif;
+}
+.nav_bar{
+    width:100%;
+}
+
+.header{
+    min-height: 80vh;
+    width:90%;
+    margin:auto;
+    background-image:linear-gradient(rgba(43, 65, 23, 0.2),rgba(133, 153, 133, 0.2)),url(../Images/farm.jpg);
+    background-size:cover;
+    /* background-color: #b7ce92e3; */
+    background-position:center;
+    background-position:relative;
+    overflow:hidden; 
+}
+nav{
+    display:flex;
+    padding:2% 6%;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-link ul li{
+    list-style-type: none;
+    position:relative;
+    padding:8px 12px;
+    display:inline-block;
+}
+.nav-link ul li a{
+    color:#000;
+    text-decoration:none;
+    font-size:0.95em;
+}
+.nav-link ul li::after{
+    content: "";
+    width:0%;
+    height:2px;
+    margin:auto;
+    display:block;
+    transition:0.5s;
+    background:rgb(111, 230, 21);
+}
+.nav-link ul li:hover::after{
+    width:100%;
+}
+nav .fa{
+    display:none;
+}
+.traing{
+    width:90%;
+    background:#f1f1f1;
+    text-align:center;
+    padding-top:50px;
+    margin:auto;
+}
+.training{
+    display:flex;
+    justify-content: space-between;
+    margin-top:5%;
+}
+.traing_type{
+    margin-bottom:5%;
+    border-radius:10px;
+    background:rgba(191, 241, 214, 0.9);
+    padding:20px 12px;
+    box-sizing: border-box;
+    flex-basis: 31%;
+    transition:0.5s;
+}
+.traing_type:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    cursor:pointer; 
+}
+.footer{
+    width:100%;
+    /* padding:15px 0; */
+    background:#666;
+    min-height: 10vh;
+}
+.ftr{
+    display:flex;
+    justify-content: center;
+    padding:15px 0;
+    align-items:center;
+    margin-top:5%;
+}
+.ftritm a{
+    text-decoration: none;
+}
+.ftritm .fas,.ftritm .fab{
+    color:white;
+}
+
+@media(max-width:700px){
+    .nav-link ul li{
+        display:block;
+    }
+    .nav-link{
+        position:absolute;
+        background:#4c7c50;
+        overflow:hidden;
+        height:100vh;
+        width:200px;
+        top:0;
+        right:-200px;
+        text-align:left;
+        z-index:1;
+        transition:1s;
+    }
+    nav .fa{
+        display:block;
+        color:#000;
+        margin:10px;
+        font-size:1.25em;
+        cursor:pointer;
+    }
+    .training{
+        flex-direction: column;
+    }
+}
