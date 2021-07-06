@@ -22,7 +22,7 @@ function signup($conn,$fname,$email,$pass,$phone_number,$FarmerCategory,$County,
     mysqli_stmt_execute($stmt);
     
     mysqli_stmt_close($stmt);
-    header("location: ../php/signup.php?error=none");
+    header("location: ../php/signin.php");
     exit();
 }
 function signin($conn,$username,$pass){

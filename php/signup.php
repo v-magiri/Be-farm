@@ -1,11 +1,5 @@
-<?php
 
-    
-
-   
-  
-?>
-   <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
     <head>
 
@@ -69,19 +63,16 @@
                             </div>
                         
                             <?php
-                                if(isset($_GET["error"])){
-                                    if($_GET["error"] == "passworddon'tmatch"){
-                                        echo "<p>Passwords don't match</p>";
-                                    }
-                                    else if ($_GET["error"]== "stmtfailed"){
-                                            echo "<p>Please try again</p>";
-                                    }
-                                    else if($_GET["error"] == "none"){
-                                            echo "<p>YOU HAVE REGISTERED</p>";
-                                            header("location: signin.php");
-                                    }
+                            if(isset($_GET["error"])){
+                                if($_GET["error"] == "passworddon'tmatch"){
+                                    echo "<p>Passwords don't match</p>";
                                 }
-                            ?>
+                                else if ($_GET["error"]== "stmtfailed"){
+                                        echo "<p>Please try again</p>";
+                                }
+
+                            }
+                        ?>
                         </div>
                         <div class="form_reg">
                             <div class="image">

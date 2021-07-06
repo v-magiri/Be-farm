@@ -39,9 +39,16 @@
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     </div>
-    <section class="header">        
-        
+    <section class="header">     
     </section>
+    <!-- <section>
+    <h1>Adapting to climate Change</h1>
+    <div class="csc">
+    <div class="cscitm">
+    <h3></h3>
+    </div>
+    </div>
+    </section>  -->
     <section class="traing">
     <h1>Services</h1>
     <div class="training">
