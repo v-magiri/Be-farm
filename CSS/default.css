@@ -125,3 +125,37 @@
     font-weight: 600;
     margin:10px 0;
 }
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+@media(max-width:550px){
+    .rowftr{
+        flex-direction: column;
+    }
+}
+@media(max-width:400px) {
+    .navlink li{
+       display: block; 
+    }
+    .navlink{
+        position:absolute;
+        width:100px;
+        top:0;
+        right:-100px;
+        height:100vh;
+        z-index:2;
+        /* text-align:center; */
+        transition:1.5s ease-in-out;
+        background-color: darkcyan;
+    }
+    .nav_bar fa{
+        display: block;
+        color:#fff;
+        margin:10px;
+        font-size:1.25em;
+        cursor:pointer;
+
+    }
+}

@@ -13,12 +13,14 @@
 <body>
     <nav class="nav_bar">
         <a href="index.php"><img src="../Images/profile.png"></a>
-        <div class="navlink">
+        <div class="navlink" id="nav_link">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
                 <li><a href="signin.php"><i class="fa fa-user"></i> Login</a></li>
                 <li><a href="signup.php"><i class="fa fa-user-plus"></i> Register</a></li>
             </ul>
         </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
     <section class="header">
         <div class="txt">
@@ -62,8 +64,15 @@
                 </div>
             </div>
     </section>
-    
-    
-    
+    <script>
+    var nav_link=document.getElementById("nav_link");
+    function showMenu(){
+        nav_link.style.right='0';
+    }
+    function hideMenu(){
+        nav_link.style.right='-200px';
+    }
+
+    </script>    
 </body>
 </html>
