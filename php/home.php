@@ -33,7 +33,7 @@
             <li><a href="#">Market</a></li>
             <li><a href="#">Farm Technologies</a></li>
             <li><a href="#">Ask an Expert</a></li>
-            <li><a href="../Includes/logout.inc.php">Log out</a></li> 
+            <li><a href="../Includes/logout.inc.php" title="Logout"><i class="fas fa-sign-out-alt"></i></a></li> 
             </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -69,24 +69,20 @@
     </section>
     <!-- footer -->
     <section class="footer">
-    
-    <div class="ftr">
-    <address style="align-self:flex-start;">
-            &copy Befarm
-    </address>
-        <div class="ftritm">
-            <a href="#"><i class="fab fa-twitter"></i> Be-farm </a>
-            
-        </div>
-        <div class="ftritm">
-            <a href="#"><i class="fab fa-facebook"></i> Be-farm  </a>
-            
-        </div>
-        <div class="ftritm">
-            <a href="mailto:befarm@gmail.com"><i class="fas fa-envelope-square"></i> Mail Us </a>
-        </div>
-       
-    </div>
+            <div class="rowftr">
+                <div class="ftritm">
+                    <p>&copy Be-Farm</p>
+                </div>
+                <div class="ftritm">
+                    <p><i class="fab fa-facebook"></i> Be-Farm</p>
+                </div>
+                <div class="ftritm">
+                    <p><i class="fab fa-twitter"></i> @Be-farm</p>
+                </div>
+                <div class="ftritm">
+                    <p> <a href="mailto:befarm@gmail.com"><i class="fas fa-envelope-square"></i> Mail Us </a></p>
+                </div>
+            </div>
     </section>
     <!-- // javascript code for showing and closing the menu for small screnn devices -->
     <script>

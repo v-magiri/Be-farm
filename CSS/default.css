@@ -13,7 +13,7 @@
     width:90%;
     margin:auto;
     background-size:cover;
-    background-image:url(../Images/farmingpng.png);
+    background-image:url('../Images/farming.png');
 }
 .nav_bar{
     /* background: #f1f1f1; */
@@ -125,6 +125,9 @@
     font-weight: 600;
     margin:10px 0;
 }
+nav .fa-times, nav .fa-bars{
+    display: none;
+}
 @media(max-width:700px){
     .row{
         flex-direction: column;
@@ -150,9 +153,9 @@
         transition:1.5s ease-in-out;
         background-color: darkcyan;
     }
-    .nav_bar fa{
+    nav .fa-times, nav .fa-bars{
         display: block;
-        color:#fff;
+        color:#000;
         margin:10px;
         font-size:1.25em;
         cursor:pointer;

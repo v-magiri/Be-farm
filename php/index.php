@@ -16,8 +16,8 @@
         <div class="navlink" id="nav_link">
         <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="signin.php"><i class="fa fa-user"></i> Login</a></li>
-                <li><a href="signup.php"><i class="fa fa-user-plus"></i> Register</a></li>
+                <li><a href="userlogin.html"><i class="fa fa-user"></i> Login</a></li>
+                <li><a href="userreg.html"><i class="fa fa-user-plus"></i> Register</a></li>
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -27,7 +27,7 @@
             <h1>Be-Farm</h1>
             <p>Supporting farmers to produce high yields thorugh the use of modern and
                  environmental friendly farming practices</p>
-            <a href="signup.php" class="btnstr">Get Started</a>
+            <a href="userreg.html" class="btnstr">Get Started</a>
         </div>
 
     </section>

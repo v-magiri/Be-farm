@@ -8,8 +8,6 @@ if(isset($_POST["register"])){
     $phone_number = $_POST['phone'];
     $FarmerCategory = $_POST['farmerCat'];
     $County = $_POST['county'];
-    $Constituency = $_POST['consty'];
-    $Ward=$_POST["ward"];
 
     require_once 'dbconn.php';
     require_once 'method.php';
@@ -18,7 +16,7 @@ if(isset($_POST["register"])){
         header("location: ../Includes/signup.php?error=passworddon'tmatch");
         exit();
     }
-    signup($conn,$fname,$email,$pass,$phone_number,$FarmerCategory,$County,$Constituency,$Ward);
+    signup($conn,$fname,$email,$pass,$phone_number,$FarmerCategory,$County);
 }
 else{
     header("Location: ../php/signup.php");

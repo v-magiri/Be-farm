@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be-Farm Registration</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background:#f1f1f1;
+        }
+        header{
+            width:95%;
+            text-align:center;
+            margin:auto;
+        }
+        header a img{
+            border-radius:50%;
+            padding:3% 4%;
+            width:100px;
+            height:100px;
+        }  
+        .role-sel{
+            width:90%;
+            margin:auto;
+        }      
+        .reg_form{          
+            display:flex;
+            justify-content: space-around;
+            margin-top:5%;
+            position:relative;
+            text-align:center;
+        }
+        .reg{
+            background:url('../Images/signup.jpg');
+            background-size:cover;
+            min-height:40vh;
+            width:50%;
+            border-radius:5px;
+        }
+        .row{
+            padding:4% 5%;
+            text-align:center;
+            border-radius:5px;
+            width:50%;
+        }
+        .reg,.row{
+            margin:0 2%;
+        }
+        .row h3{
+            font-size:1.75em;
+        }
+        .role{
+            display:flex;
+            position:relative;
+            margin-top:50px;
+        }
+        .farmer a, .expert a{
+            text-decoration: none;
+            font-size:1.5em;
+            font-weight:600;
+            padding:20px 5px;
+            color:#fff;
+        }
+        .farmer, .expert{
+            border-radius:20px;
+            background:rgb(13, 102, 19);
+            border:1px solid rgb(13, 102, 19);
+        }
+        .farmer:hover, .expert:hover{
+            background:transparent;
+        }
+        .farmer a:hover, .expert a:hover{
+        color:#000;
+        }
+
+        .rowftr{
+            margin-top:5%;
+            display: flex;
+            justify-content: space-around;
+            position:relative;
+            background:rgba(0,0,0,0.7);
+            width:100%;
+            left:0;
+            bottom:0;
+            color:white;
+            min-height: 7.5vh;
+            align-items: center;
+            font-size:1.25em;
+        }
+        .ftritm:hover{
+            cursor:pointer;
+            color:darkcyan;
+        }
+        .ftritm a{
+            text-decoration:none;
+            color:#fff;
+        }
+        @media(max-width:700px){
+            .reg_form{
+                flex-direction: column;
+            }
+            .reg,.row{
+                margin-top:2%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.php"><img src="../Images/profile.png" alt="Be-Farm Logo"></a>
+    </header>
+    <section class="role-sel">
+        <div class="reg_form">
+            <div class="reg">
+                <!-- <img src="../Images/farm.jpg" alt="select role" style="width:400px;"> -->
+            </div>
+            
+            <div class="row" style="background:cornsilk;">
+                    <h3>Login as:</h3> 
+                <div class="role">
+                    <div class="col farmer">
+                        <a href="signin.php" title="register as farmer">Farmer</a>
+                    </div>
+                    <div class="col expert" style="margin-left:20px;">
+                        <a href="signin.php" title="register as agricultural expert">Agricultural Expert</a>
+                    </div>
+                </div>
+                <p style="margin-top:5%; ">Already Have An Account?<a href="signin.php" style="text-decoration:none;"> Login</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+            <div class="rowftr">
+                <div class="ftritm">
+                    <p>&copy Be-Farm</p>
+                </div>
+                <div class="ftritm">
+                    <p><i class="fab fa-facebook"></i> Be-Farm</p>
+                </div>
+                <div class="ftritm">
+                    <p><i class="fab fa-twitter"></i> @Be-farm</p>
+                </div>
+                <div class="ftritm">
+                    <p> <a href="mailto:befarm@gmail.com"><i class="fas fa-envelope-square"></i> Mail Us </a></p>
+                </div>
+            </div>
+    </section>
+    
+</body>
+</html>

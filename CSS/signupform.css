@@ -4,41 +4,74 @@
     font-family: 'Lato', sans-serif;
 }
 body{
-    background:rgb(78, 134, 78);
-}
-.registration_form{
-    width:90%;
-    margin:auto;  
+    background: rgba(121, 250, 157, 1);
 }
 .Header{
     text-align:center;
     line-height: 50px;
 }
-.registration_form input{
-    width:100%;
-    border-radius:20px;
-    height:25px;
-}
-.submit{
-    width:200px;
-    background:rgb(76, 145, 236);
-    border-radius:10px;
-    text-align:center;
-}
-.reg_form select{
-    border-radius:10px;
-    height:20px;
-}
 .form{
-    display:flex;
-    position:relative;
-    margin-top:5px;
+    width:80%;
+    margin:auto;
 }
-.form_reg{
-    margin:0 30px;
+.reg_container{
+    position:relative;
+    display:flex;
+    justify-content: space-around;
+}
+.row{
+    width:50%;
+}
+.col-img{
+    background:url('../Images/signup.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    border-radius:5px;
+    margin:0 4% 2%;
+}
+.col-img:hover{
+    box-shadow:0 0 20px 0px rgba(0,0,0,0.2);
+    cursor:pointer;
+}
+.col-reg{
+    font-size:0.95em;
+    font-weight:600;
+}
+.col-reg input{
+    width:75%;
+    border:2px solid black;
+    border-radius:20px;
+}
+.col-reg select{
+    width:50%;
+    border:2px solid #000;
+    border-radius:20px;
+    font-size:0.95em;
+}
+.col-reg p{
+    color:rgb(1, 6, 17);
+    font-weight: 400;
+}
+.col-reg a{
+    text-decoration:none;
+}
+.col-reg a:hover{
+    border:2px solid #eb9e34;
+    background-color:transparent;
+    color:#3477eb;
+    border-radius:20px;
+    padding:0 4px;
+}
+.col-reg .submit{
+    border:2px solid #425950;
+    border-radius:20px;
+    padding:4px 8px;
+    background-color:#0799ed;
+    text-align: center;
 }
 @media(max-width:700px){
-    .form{
+    .reg_container{
         flex-direction:column;
     }
 }
