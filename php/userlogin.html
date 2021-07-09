@@ -12,7 +12,7 @@
             padding:0;
         }
         body{
-            background:#f1f1f1;
+            background:#fff;
         }
         header{
             width:95%;
@@ -40,7 +40,7 @@
             background:url('../Images/signup.jpg');
             background-size:cover;
             min-height:40vh;
-            width:50%;
+            width:100%;
             border-radius:5px;
         }
         .row{
@@ -48,6 +48,7 @@
             text-align:center;
             border-radius:5px;
             width:50%;
+            background: #e5e5e5;
         }
         .reg,.row{
             margin:0 2%;
@@ -63,9 +64,12 @@
         .farmer a, .expert a{
             text-decoration: none;
             font-size:1.5em;
-            font-weight:600;
+            font-weight:600; 
             padding:20px 5px;
             color:#fff;
+        }
+        .expert{
+            margin-left:50px;
         }
         .farmer, .expert{
             border-radius:20px;
@@ -80,20 +84,20 @@
         }
 
         .rowftr{
-            margin-top:5%;
-            display: flex;
-            justify-content: space-around;
             position:relative;
-            background:rgba(0,0,0,0.7);
+            min-height: 7.5vh;
             width:100%;
             left:0;
             bottom:0;
-            color:white;
-            min-height: 7.5vh;
+            margin-top:5%;
+            display: flex;
+            justify-content: space-around;
             align-items: center;
+            background:rgba(0,0,0,0.7);
+            color:white;
             font-size:1.25em;
         }
-        .ftritm:hover{
+        .ftritm a:hover{
             cursor:pointer;
             color:darkcyan;
         }
@@ -101,12 +105,92 @@
             text-decoration:none;
             color:#fff;
         }
+        .reg-nav{
+            margin-top:5%;
+        }
+        .reg-nav a{
+            color:rgb(52, 143, 235);
+            font-weight: 600;
+        }
+        .reg-nav a:hover{
+            border:1px solid #777;
+            border-radius:20px;
+            color:#fff;
+            background-color:#4caf50;
+            /* padding:0 2px; */
+
+        }
         @media(max-width:700px){
-            .reg_form{
+            .reg_form, .role{
                 flex-direction: column;
             }
             .reg,.row{
                 margin-top:2%;
+                width:80%;
+            }
+            .expert{
+                width:75%;
+                margin: 10% auto 0;
+                padding:4px 0;
+            }
+            .farmer{
+                width:40%;
+                margin:auto;
+                padding:4px 0;
+            }
+            .farmer a,.expert a{
+                font-size:1.25em;
+            }
+            .reg{
+                background:url('../Images/signin.jpg');
+                background-size:auto;
+                margin:auto;
+                box-sizing: border-box;
+            }
+        }
+        @media(max-width:770px) and (min-width:700px){
+            .footer{
+                position:fixed;
+                bottom:0;
+                width:100%;
+            }
+            .row, .reg{
+                min-height: 55vh;
+            }
+            .role{
+                flex-direction:column;
+            }
+            .farmer{
+                margin-top:4%;
+                width: 50%;
+                margin: auto;
+                padding: 4px 0;
+            }
+            .farmer a,.expert a{
+                font-size:1.25em;
+                font-weight:600;
+            }
+            .expert{
+                margin-top:20%;
+                padding:4px 0;
+            }
+            .reg-nav{
+                margin-top:20%;
+                font-weight: 400;
+            }
+            
+        }
+        @media(max-width:480px){
+            .rowftr{
+                flex-direction: column;
+            }
+            .ftritm{
+                padding:4px 0;
+            }
+        }
+        @media(max-width:420px){
+            .expert{
+                border-radius:40px;
             }
         }
     </style>
@@ -121,17 +205,17 @@
                 <!-- <img src="../Images/farm.jpg" alt="select role" style="width:400px;"> -->
             </div>
             
-            <div class="row" style="background:cornsilk;">
+            <div class="row">
                     <h3>Login as:</h3> 
                 <div class="role">
                     <div class="col farmer">
                         <a href="signin.php" title="register as farmer">Farmer</a>
                     </div>
-                    <div class="col expert" style="margin-left:20px;">
+                    <div class="col expert">
                         <a href="signin.php" title="register as agricultural expert">Agricultural Expert</a>
                     </div>
                 </div>
-                <p style="margin-top:5%; ">Already Have An Account?<a href="signin.php" style="text-decoration:none;"> Login</a></p>
+                <p class="reg-nav">Already Have An Account?<a href="signin.php" style="text-decoration:none;"> Login</a></p>
             </div>
         </div>
     </section>

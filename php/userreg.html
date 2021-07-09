@@ -12,7 +12,7 @@
             padding:0;
         }
         body{
-            background:#f1f1f1;
+            background:#fff;
         }
         header{
             width:95%;
@@ -48,6 +48,7 @@
             text-align:center;
             border-radius:5px;
             width:50%;
+            background:#e5e5e5;
         }
         .reg,.row{
             margin:0 2%;
@@ -72,11 +73,17 @@
             background:rgb(13, 102, 19);
             border:1px solid rgb(13, 102, 19);
         }
+        .expert{
+            margin-left:20px;
+        }
         .farmer:hover, .expert:hover{
             background:transparent;
         }
         .farmer a:hover, .expert a:hover{
         color:#000;
+        }
+        .reg-nav{
+            margin-top:5%;
         }
 
         .rowftr{
@@ -102,11 +109,76 @@
             color:#fff;
         }
         @media(max-width:700px){
-            .reg_form{
+            .reg_form, .role{
                 flex-direction: column;
             }
             .reg,.row{
                 margin-top:2%;
+                width:80%;
+            }
+            .expert{
+                width:75%;
+                margin: 10% auto 0;
+                padding:4px 0;
+            }
+            .farmer{
+                width:40%;
+                margin:auto;
+                padding:4px 0;
+            }
+            .farmer a,.expert a{
+                font-size:1.25em;
+            }
+            .reg{
+                background:url('../Images/signin.jpg');
+                background-size:auto;
+                margin:auto;
+                box-sizing: border-box;
+            }
+        }
+        @media(max-width:770px) and (min-width:700px){
+            .footer{
+                position:fixed;
+                bottom:0;
+                width:100%;
+            }
+            .row, .reg{
+                min-height: 55vh;
+            }
+            .role{
+                flex-direction:column;
+            }
+            .farmer{
+                margin-top:4%;
+                width: 50%;
+                margin: auto;
+                padding: 4px 0;
+            }
+            .farmer a,.expert a{
+                font-size:1.25em;
+                font-weight:600;
+            }
+            .expert{
+                margin-top:20%;
+                padding:4px 0;
+            }
+            .reg-nav{
+                margin-top:20%;
+                font-weight: 400;
+            }
+            
+        }
+        @media(max-width:480px){
+            .rowftr{
+                flex-direction: column;
+            }
+            .ftritm{
+                padding:4px 0;
+            }
+        }
+        @media(max-width:420px){
+            .expert{
+                border-radius:40px;
             }
         }
     </style>
@@ -121,17 +193,17 @@
                 <!-- <img src="../Images/farm.jpg" alt="select role" style="width:400px;"> -->
             </div>
             
-            <div class="row" style="background:cornsilk;">
+           <div class="row">
                     <h3>Register as:</h3> 
                 <div class="role">
                     <div class="col farmer">
                         <a href="signup.php" title="register as farmer">Farmer</a>
                     </div>
-                    <div class="col expert" style="margin-left:20px;">
+                    <div class="col expert">
                         <a href="expertrole.php" title="register as agricultural expert">Agricultural Expert</a>
                     </div>
                 </div>
-                <p style="margin-top:5%; ">Already Have An Account?<a href="signin.php" style="text-decoration:none;"> Login</a></p>
+                <p class="reg-nav">Already Have An Account?<a href="signin.php" style="text-decoration:none;"> Login</a></p>
             </div>
         </div>
     </section>

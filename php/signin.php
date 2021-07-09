@@ -14,6 +14,9 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/signinform.css">
     <title>Be-Farm Login</title>
 </head>
@@ -32,7 +35,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
                             <label for="pwd">Password:</label><br>
                             <input type="password" id="pwd" required name="pwd"><br><br>
                             <p>Create Account? <a href="signup.php">Sign Up</a></p><br>
-                            <button type="submit" name="login" class="submit"><i class="fas fa-sign-in-alt"></i>Log in</button>
+                            <div class="btn"><button type="submit" name="login" class="submit">Log in</button></div>
                         </form><br>
                     </div>
                     <?php
