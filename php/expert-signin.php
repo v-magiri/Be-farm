@@ -28,7 +28,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
             <div class="login_container">   
                 <div class="row">
                     <div class="col-form">
-                        <form method="post" action="../Includes/signin.inc.php ">
+                        <form method="post" action="../Includes/expertsignin.inc.php ">
                             <label for="email">Username:</label><br>
                             <input type="email" id="Email" required name="email"><br>
                             <label for="pwd">Password:</label><br>
@@ -40,7 +40,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
                     <?php
                         if(isset($_GET['error'])){
                             if($_GET['error'] == "wronglogin"){
-                                echo "<p>Incorrect Log in details</p>";
+                                echo "<script>Incorrect Log in details</script>";
                             }
 
                         }

@@ -18,9 +18,9 @@
                         <div class="reg_container">
                             <div class="row">                 
                                 <div class="col-reg">
-                                    <form method="post" action="../Includes/signup.inc.php">
+                                    <form method="post" action="../Includes/expertsignup.inc.php">
                                         <label for="fname">Full Name:</label><br>
-                                        <input type="text" id="fname" name="full_Name" required> <br>                      
+                                        <input type="text" id="fname" name="full_Name" required placeholder="John Doe"> <br>                      
                                         <label for="email">Email Address:</label><br>
                                         <input type="email" id="email" name="email_Address" required  placeholder="someone@example.com"><br>
                                         <label for="pwd">Password:</label><br>
@@ -29,15 +29,7 @@
                                         <input type="password" id="cpwd" required name="cpwd"><br>
                                         <label for="phone">Phone Number:</label><br>
                                         <input type="text" id="phone" name="phone" required><br>
-                                        <label for="Farmer_Category">Farmer Category:</label><br>
-                                        <select id="Farmer_Category" name="farmerCat" required>
-                                        <option value="Dairy farmer">Dairy Farmer</option>
-                                        <option value="maize farmer"> Maize Farmer</option>
-                                        <option value="Potato farmer">Potato Farmer</option>
-                                        <option value="poultry farmer">Poultry Farmer</option>
-                                        <option value="rice farmer">Rice Farmer</option>
-                                        </select><br>
-                                        <label for="County">County:</label><br>
+                                        <label for="County">Location:</label><br>
                                         <select type="text" id="county" name="county" required>
                                             <option value="Nyeri">Nyeri</option>
                                             <option value="Nyandarua">Nyandarua</option>
@@ -53,7 +45,7 @@
                                             <option value="Kisii">Kisii</option>
                                             <option value="Kisumu">Kisumu</option>
                                         </select><br><br>
-                                        <p>Already have an Account?<a href="signin.php">Sign in</a></p><br>
+                                        <p>Already have an Account?<a href="expert-signin.php">Sign in</a></p><br>
                                         <button type="submit" name="register" class="submit">Signup</button>
                                     </form>
                                 </div>
