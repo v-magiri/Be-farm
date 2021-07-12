@@ -12,12 +12,12 @@ if(isset($_POST["register"])){
     require_once 'method.php';
 
     if(pwdmatch($pass,$repeatpwd)){
-        header("location: ../Includes/signup.php?error=passworddon'tmatch");
+        header("location: ../Includes/expert-signup.php?error=passworddon'tmatch");
         exit();
     }
     expertreg($conn,$fname,$email,$pass,$phone_number,$County);
 }
 else{
-    header("Location: ../php/signup.php");
+    header("Location: ../php/expert-signup.php");
     die;
 }

@@ -40,7 +40,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
                     <?php
                         if(isset($_GET['error'])){
                             if($_GET['error'] == "wronglogin"){
-                                echo "<script>Incorrect Log in details</script>";
+                                echo "<script>alert('Incorrect Log in details')</script>";
                             }
 
                         }
