@@ -53,10 +53,10 @@
                                 <?php
                                     if(isset($_GET["error"])){
                                         if($_GET["error"] == "passworddon'tmatch"){
-                                            echo "<p>Passwords don't match</p>";
+                                            echo "<p style='color:red;'><b>Passwords don't match</b></p>";
                                         }
                                         else if ($_GET["error"]== "stmtfailed"){
-                                                echo "<p>Please try again</p>";
+                                                echo "<p style='color:red'><b>Please try again</b></p>";
                                         }
 
                                     }

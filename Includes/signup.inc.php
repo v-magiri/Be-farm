@@ -13,7 +13,7 @@ if(isset($_POST["register"])){
     require_once 'method.php';
 
     if(pwdmatch($pass,$repeatpwd)){
-        header("location: ../Includes/signup.php?error=passworddon'tmatch");
+        header("location: ../php/signup.php?error=passworddon'tmatch");
         exit();
     }
     signup($conn,$fname,$email,$pass,$phone_number,$FarmerCategory,$County);
