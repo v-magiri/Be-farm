@@ -16,7 +16,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/experthome.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Be-Farm</title>
@@ -29,14 +31,34 @@
             <div class="navlinks">
                 <ul>
                     <li><a href="expert-home.php">Home</a></li>
-                    <li><a href="">Inquires</a></li>
-                    <li><a href="" title="Logout"><i class="fas fa-sign-out-alt"></i></a></li>
+                    <li><a href="inquires.php">Inquires</a></li>
+                    <li><a href="../Includes/exlogout.php"><i class="fas fa-sign-out-alt "><span class="title">Log out</span></i></a></li>
 
                 </ul>
             </div>
         </nav>
         
     </div>
+    <section class="header">
+    </section>
+    <section class="main">
+        <h2>Inquires</h2>
+        <div class="inq-row">
+            <div class="inq">
+                <i class="fa fa-user-circle"></i>
+
+            </div>
+            <div class="inq">
+                <i class="fa fa-user-circle"></i>
+                
+            </div>
+            <div class="inq">
+                <i class="fa fa-user-circle"></i>
+                
+            </div>              
+
+        </div>
+    </section>
 
     <!-- footer -->
     <section class="footer">

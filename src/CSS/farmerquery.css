@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #E1F8E7;
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    display:flex;
+    padding:2% 6%;
+    position:relative;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navlinks ul li::after{
+    content: "";
+    width:0%;
+    height:2px;
+    margin:auto;
+    display:block;
+    transition:0.5s;
+    background:#2b7a06;
+}
+.navlinks ul li{
+    list-style-type: none;
+    position:relative;
+    padding:8px 12px;
+    display: inline-block;
+}
+.navlinks ul li:hover::after{
+    width:100%;
+}
+.navlinks ul li a{
+    color:#000;
+    text-decoration:none;
+    font-size:1.25em;
+    font-weight:600;
+}
+.fas{
+    position:relative;
+    display:inline-block;
+}
+.title{
+    visibility: hidden;
+    width:100px;
+    background-color:#666;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.fas:hover .title{
+    visibility: visible;
+    opacity: 1;
+    transition:1s;
+}
+.fas .title::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #666 transparent transparent transparent;
+  }
+.header{
+    width:90%;
+    margin:auto;
+    min-height: 80vh;
+    background-repeat:no-repeat;
+    background-image:linear-gradient(rgba(43, 65, 23, 0.2),rgba(133, 153, 133, 0.2)),url(../Images/farming.png);
+    background-size:cover;
+    background-position:center;
+    background-position:relative;
+    overflow:hidden;  
+}
+.rowftr{
+    margin-top:5%;
+    display: flex;
+    justify-content: space-around;
+    position:relative;
+    background:rgba(0,0,0,0.7);
+    width:100%;
+    left:0;
+    bottom:0;
+    color:white;
+    min-height: 7.5vh;
+    align-items: center;
+    font-size:1.25em;
+}
+.ftritm:hover{
+    cursor:pointer;
+    color:darkcyan;
+}
+.ftritm a{
+    text-decoration:none;
+    color:#fff;
+}
