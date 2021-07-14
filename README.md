@@ -1,5 +1,5 @@
 # Be-farm
-![Be-Farm](https://github.com/vicky-magiri/Be-farm/blob/main/src/Images/cover.png)
+![Be-Farm](https://dev.azure.com/Befarm/Be-farm/_git/Be_farm?path=%2Fsrc%2FImages%2Fcover.png&version=GBmain)
 ## Description
 Be-farm is a web application has the following functionalities:
 * Help farmers to deliver high yields
