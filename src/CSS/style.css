@@ -10,6 +10,8 @@ body{
 
 .nav_bar{
     width:100%;
+    font-size:1.25em;
+    font-weight: 600;
 }
 
 .header{
@@ -26,7 +28,7 @@ body{
 nav{
     display:flex;
     padding:2% 6%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .nav-link ul li{
@@ -55,6 +57,69 @@ nav{
 nav .fa{
     display:none;
 }
+li .fa{
+    display: inline-block;
+}
+.fas{
+    position:relative;
+    display:inline-block;
+}
+li .dropdown{
+    display: inline-block;
+}
+.dropctn{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: display 1s ease-in-out;
+}
+.dropctn a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropctn a:hover{
+    background-color: rgb(111, 230, 21);
+}
+.dropdown:hover .dropctn{
+    display:block;
+}
+.title{
+    visibility: hidden;
+    width:100px;
+    background-color:#000;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.fas:hover .title{
+    visibility: visible;
+    opacity: 1;
+    transition:1s;
+}
+.fas .title::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #666 transparent transparent transparent;
+  }
 .traing{
     width:90%;
     background:#f1f1f1;
@@ -79,6 +144,18 @@ nav .fa{
 .traing_type:hover{
     box-shadow: 0 0 20px rgba(0,0,0,.2);
     cursor:pointer; 
+}
+.market{
+    width:90%;
+    margin:auto;
+    margin-top:4%;
+}
+.row-header{
+    text-align:center;
+}
+.marketrow{
+    display: flex;
+    justify-content: space-between;
 }
 .rowftr{
     margin-top:5%;
