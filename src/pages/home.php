@@ -41,14 +41,7 @@
     </div>
     <section class="header">     
     </section>
-    <!-- <section>
-    <h1>Adapting to climate Change</h1>
-    <div class="csc">
-    <div class="cscitm">
-    <h3></h3>
-    </div>
-    </div>
-    </section>  -->
+   <!-- to add climate smart crops recommendation -->
     <section class="traing">
     <h1>Services</h1>
     <div class="training">
@@ -65,8 +58,32 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro alias inventore explicabo. Alias provident tenetur architecto officia reiciendis a ab vel, distinctio sit dolor, ea velit amet repellat eligendi?</p>  
     </div>
     </div>
-
     </section>
+    <!-- farm produce market -->
+    <section class="market">
+        <h2>Farm Produce Market</h2>
+        <div class="marketrow">
+            <div class="markettype">
+                <h3>Mkulima Young</h3>
+                <img src="" alt="Mkulima Young">
+                <p></p>
+                <a href="">Visit Site</a>
+            </div>
+            <div class="markettype">
+                <h3>Jiji Kenya</h3>
+                <img src="" alt="Jiji Kenya">
+                <p></p>
+                <a href="">Visit Site</a>
+            </div>
+            <div class="markettype">
+                <h3>Farmers Market Kenya</h3>
+                <img src="" alt="Farmers Market Kenya">
+                <p></p>
+                <a href="">Visit Site</a>
+            </div>
+        </div>
+    </section>
+
     <!-- footer -->
     <section class="footer">
             <div class="rowftr">

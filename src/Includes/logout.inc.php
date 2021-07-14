@@ -5,5 +5,5 @@
      session_unset();
      session_destroy();
 
-     header("location:../php/signin.php");
+     header("location:../pages/signin.php");
      exit();

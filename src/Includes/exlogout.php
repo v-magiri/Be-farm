@@ -5,5 +5,5 @@
      session_unset();
      session_destroy();
 
-     header("location:../php/expert-signin.php");
+     header("location:../pages/expert-signin.php");
      exit();

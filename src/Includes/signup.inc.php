@@ -13,12 +13,12 @@ if(isset($_POST["register"])){
     require_once 'method.php';
 
     if(pwdmatch($pass,$repeatpwd)){
-        header("location: ../php/signup.php?error=passworddon'tmatch");
+        header("location: ../pages/signup.php?error=passworddon'tmatch");
         exit();
     }
     signup($conn,$fname,$email,$pass,$phone_number,$FarmerCategory,$County);
 }
 else{
-    header("Location: ../php/signup.php");
+    header("Location: ../pages/signup.php");
     die;
 }

@@ -10,7 +10,7 @@
             signin($conn,$username,$pass);
         }
         else{
-            header("location: ../php/signin.php");
+            header("location: ../pages/signin.php");
             exit();
         }
 
