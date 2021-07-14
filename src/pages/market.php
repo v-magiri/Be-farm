@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/style.css">
-    <title>Farmer Training</title>
+    <title>Market</title>
 </head>
 <body>
 <div class="nav_bar">
@@ -68,6 +68,7 @@
                 </div>
             </div>
     </section>
+    
     
 </body>
 </html>

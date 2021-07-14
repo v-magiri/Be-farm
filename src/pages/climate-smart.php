@@ -28,24 +28,24 @@
             <div class="nav-link" id="nav_link">
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="home.php">Home</a></li>
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Services<i class="fa fa-caret-down"></i></a>
                 <div class="dropctn">
-                    <a href="#">Training</a>
-                    <a href="#">Credit</a>
+                    <a href="training.php">Training</a>
+                    <a href="credit.php">Credit</a>
                 </div>
             </li>
-            <li><a href="#">Market</a></li>
+            <li><a href="market.php">Market</a></li>
             <li class="dropdown">
                 <a href="javascript:void(0)">Farm Technologies<i class="fa fa-caret-down"></i></a>
                 <div class="dropctn">
-                    <a href="#">Planting Material</a>
-                    <a href="#">Farm Inputs</a>
-                    <a href="#">Farm Tools</a>
+                    <a href="farm-tech.php">Planting Material</a>
+                    <a href="farm-tech.php">Farm Inputs</a>
+                    <a href="farm-tech.php">Farm Tools</a>
                 </div>
             </li>
-            <li><a href="#">Ask an Expert</a></li>
+            <li><a href="ask-an-expert.php">Ask an Expert</a></li>
             <li><a href="../Includes/logout.inc.php"><i class="fas fa-sign-out-alt"><span class="title">Log out</span></i></i></a></li> 
             </ul>
             </div>
